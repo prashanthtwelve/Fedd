@@ -1,0 +1,60 @@
+# Dependencies and generated output
+node_modules/
+build/
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+.setup/
+.build/
+artifacts/
+coverage/
+*.apk
+*.aab
+*.apks
+*.hprof
+*.log
+
+# Machine-specific configuration
+local.properties
+.env
+.env.*
+!.env.example
+.npmrc
+.idea/
+.DS_Store
+Thumbs.db
+
+# Private signing material and credentials (including debug keys)
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*signing*.json
+*signing*.properties
+*credentials*.json
+*credentials*.properties
+*passwords*.txt
+secrets/
+signing/
+id_rsa*
+id_ed25519*
+
+# Personal exports, encrypted vaults and device diagnostics
+*.feddbackup
+*.secure
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+backups/
+personal-data/
+exports/
+bugreports/
+
+# Local design previews (original references remain tracked)
+design-previews/
+stitch-landing-preview.png

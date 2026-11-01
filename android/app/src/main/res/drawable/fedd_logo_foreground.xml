@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Keep the entire 473:355 JPEG inside Android's adaptive-icon safe zone. -->
+    <item android:width="52dp" android:height="39.027485dp" android:gravity="center">
+        <bitmap android:src="@drawable/fedd_logo" android:gravity="fill" android:filter="true"/>
+    </item>
+</layer-list>

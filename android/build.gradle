@@ -1,0 +1,39 @@
+buildscript {
+    ext {
+        buildToolsVersion = "37.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 37
+        targetSdkVersion = 36
+        ndkVersion = "27.1.12297006"
+        // AsyncStorage 3.1.1 resolves Kotlin 2.2.10; match its KSP processor.
+        kotlinVersion = "2.2.10"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+    }
+}
+
+// Optional standard native staging relocation for machines with a small C: drive.
+// This does not relocate source files or alias paths; CI uses the normal layout.
+def externalBuildRoot = System.getenv("FEDD_BUILD_ROOT")
+if (externalBuildRoot) {
+    allprojects { project ->
+        // RN codegen requires build outputs on the source drive. Keep its usual
+        // paths and relocate the large C++ object files through Android's DSL.
+        project.plugins.withId("com.android.application") {
+            project.android.externalNativeBuild.cmake.buildStagingDirectory = file("${externalBuildRoot}/native/${project.name}")
+        }
+        project.plugins.withId("com.android.library") {
+            project.android.externalNativeBuild.cmake.buildStagingDirectory = file("${externalBuildRoot}/native/${project.name}")
+        }
+    }
+}
+
+// This plugin evaluates app projects, so output/NDK hooks must be registered first.
+apply plugin: "com.facebook.react.rootproject"

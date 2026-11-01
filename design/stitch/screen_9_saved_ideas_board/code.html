@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-background" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#005141", "surface-container-highest": "#e0e3e1", "surface-dim": "#d7dbd9", "on-tertiary": "#ffffff", "background": "#f7faf8", "secondary-fixed-dim": "#b9cac5", "outline-variant": "#bec9c4", "surface-container-lowest": "#ffffff", "secondary-fixed": "#d4e6e0", "on-surface-variant": "#3f4945", "primary-container": "#1f6f5c", "on-secondary-fixed": "#0f1e1b", "surface-container-high": "#e6e9e7", "primary-fixed-dim": "#8ad5be", "on-tertiary-fixed-variant": "#304c45", "on-secondary-container": "#576863", "tertiary-container": "#4d6961", "on-secondary-fixed-variant": "#3a4a46", "inverse-on-surface": "#eef1ef", "on-error": "#ffffff", "surface-container-low": "#f1f4f2", "surface-container": "#ebefed", "secondary-container": "#d4e6e0", "error": "#ba1a1a", "surface": "#f7faf8", "on-surface": "#181c1b", "on-tertiary-fixed": "#03201a", "outline": "#6f7975", "on-tertiary-container": "#c8e7de", "on-background": "#181c1b", "surface-variant": "#e0e3e1", "surface-tint": "#186a57", "tertiary-fixed": "#cae9e0", "surface-bright": "#f7faf8", "secondary": "#51625d", "inverse-primary": "#8ad5be", "on-primary-fixed": "#002019", "error-container": "#ffdad6", "on-primary": "#ffffff", "tertiary": "#35514a", "primary": "#005645", "on-primary-container": "#a3efd7", "inverse-surface": "#2d3130", "primary-fixed": "#a5f2d9", "tertiary-fixed-dim": "#aecdc4", "on-error-container": "#93000a", "on-secondary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter": "1rem", "margin": "1.25rem" }, "fontFamily": { "headline-xl": ["Sora"], "headline-md": ["Sora"], "headline-lg": ["Sora"], "headline-sm": ["Sora"], "body-md": ["DM Sans"], "label-sm": ["DM Sans"], "body-lg": ["DM Sans"], "body-sm": ["DM Sans"], "label-md": ["DM Sans"], "label-lg": ["DM Sans"] }, "fontSize": { "headline-xl": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:y none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><h1 class="text-on-surface text-headline-sm font-headline-sm truncate">Saved Ideas</h1></div><div class="flex items-center gap-space-sm pr-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Header Intro Section -->
+<header class="pt-space-md pb-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Intentional Notebook</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Things I want to try</h2>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+      Ideas and techniques jotted down during post-session check-ins.
+    </p>
+</header>
+<!-- Filter & Count Bar -->
+<section aria-label="Filters and stats" class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="filter-chip px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-medium transition-all shadow-sm" data-filter="all">
+        All (5)
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md font-medium hover:bg-surface-container-low transition-all" data-filter="Filmmaking">
+        Filmmaking
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md font-medium hover:bg-surface-container-low transition-all" data-filter="Editing">
+        Editing
+      </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md font-medium hover:bg-surface-container-low transition-all" data-filter="Photography">
+        Photography
+      </button>
+</div>
+<button class="text-secondary hover:text-primary transition-colors p-1 flex items-center gap-1 font-label-sm text-label-sm" id="toggleEmptyDemo" title="Preview empty condition">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Preview</span>
+</button>
+</section>
+<!-- Active Ideas Staggered Grid (Two columns for organic editorial flow) -->
+<div class="grid grid-cols-2 gap-space-sm items-start" id="ideasGrid">
+<!-- Column 1 -->
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1 -->
+<article class="idea-card bg-surface-container-lowest rounded-[18px] p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group" data-category="Editing">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">Editing</span>
+<button aria-label="Saved idea options" class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium pt-1 leading-snug">
+            Teal and orange grade on night scenes
+          </p>
+</div>
+<div class="flex items-center justify-between text-secondary pt-2">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+<span>Yesterday</span>
+</div>
+<span class="material-symbols-outlined text-[15px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="idea-card bg-surface-container-lowest rounded-[18px] p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group" data-category="Filmmaking">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">Filmmaking</span>
+<button aria-label="Saved idea options" class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium pt-1 leading-snug">
+            Slow pan with 35mm focal length across window light
+          </p>
+</div>
+<div class="flex items-center justify-between text-secondary pt-2">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+<span>Oct 14</span>
+</div>
+<span class="material-symbols-outlined text-[15px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="idea-card bg-surface-container-lowest rounded-[18px] p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group" data-category="Editing">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">Editing</span>
+<button aria-label="Saved idea options" class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium pt-1 leading-snug">
+            Analog film grain overlay at 15% opacity with gentle halation
+          </p>
+</div>
+<div class="flex items-center justify-between text-secondary pt-2">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+<span>Oct 09</span>
+</div>
+<span class="material-symbols-outlined text-[15px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+</article>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col gap-space-sm">
+<!-- Card 4 -->
+<article class="idea-card bg-surface-container-lowest rounded-[18px] p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group" data-category="Photography">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">Photography</span>
+<button aria-label="Saved idea options" class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium pt-1 leading-snug">
+            Try 3-point lighting setup on portrait interviews
+          </p>
+</div>
+<div class="flex items-center justify-between text-secondary pt-2">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+<span>Oct 12</span>
+</div>
+<span class="material-symbols-outlined text-[15px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="idea-card bg-surface-container-lowest rounded-[18px] p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group" data-category="Filmmaking">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">Filmmaking</span>
+<button aria-label="Saved idea options" class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium pt-1 leading-snug">
+            L-cut audio transitions between scene beats
+          </p>
+</div>
+<div class="flex items-center justify-between text-secondary pt-2">
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+<span>Oct 11</span>
+</div>
+<span class="material-symbols-outlined text-[15px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
+</div>
+</article>
+<!-- Mini Intentional Prompt Tile -->
+<div class="bg-surface-container-low rounded-[18px] p-space-md flex flex-col gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-snug">
+          Remember: only capture what you actually intend to practice this week.
+        </p>
+</div>
+</div>
+</div>
+<!-- Organic Breather / Section Divider -->
+<div class="flex flex-col items-center justify-center my-space-xl py-space-sm gap-2">
+<div class="flex items-center gap-3 w-full">
+<div class="flex-1 h-[1px] bg-surface-container-highest"></div>
+<div class="flex items-center gap-1 text-secondary px-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary/40"></span>
+</div>
+<div class="flex-1 h-[1px] bg-surface-container-highest"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider pt-1">Empty state preview</span>
+</div>
+<!-- Empty State Dedicated Container -->
+<section class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col items-center text-center relative overflow-hidden transition-all" id="emptyStateSection">
+<!-- Gentle Ambient Backdrop Gradient -->
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-12 -left-12 w-36 h-36 bg-primary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Calm Outline Notebook / Sparkle Icon Emblem -->
+<div class="relative w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-[30px]">auto_stories</span>
+<span class="material-symbols-outlined text-[16px] absolute top-2 right-2 text-primary-container">arrow_back_ios_new</span>
+</div>
+<!-- Heading & Message -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-semibold">
+      Nothing saved yet. Add one at your next check-in.
+    </h3>
+<!-- Quiet Subtext -->
+<p class="font-body-md text-body-md text-secondary max-w-[290px] mb-space-lg leading-relaxed">
+      When you finish an intentional session, take 5 seconds to capture one creative spark.
+    </p>
+<!-- Calming Primary Action -->
+<button class="w-full max-w-[280px] h-[52px] rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-xs hover:bg-primary-container transition-all active:scale-[0.98] shadow-sm">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span>Add an experiment idea</span>
+</button>
+</section>
+<!-- Bottom Intentional Closing Reminder -->
+<footer class="pt-space-xl pb-space-lg flex flex-col items-center text-center gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">You are caught up</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">Quality over accumulation. Act on what you keep.</p>
+</footer>
+</div>
+<script>
+  (function () {
+    const chips = document.querySelectorAll('.filter-chip');
+    const cards = document.querySelectorAll('.idea-card');
+    const toggleBtn = document.getElementById('toggleEmptyDemo');
+    const grid = document.getElementById('ideasGrid');
+    const emptySec = document.getElementById('emptyStateSection');
+
+    // Filter Chips Interactive Logic
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => {
+          c.classList.remove('bg-secondary-container', 'text-on-secondary-fixed', 'shadow-sm');
+          c.classList.add('bg-surface-container-lowest', 'text-secondary');
+        });
+        chip.classList.remove('bg-surface-container-lowest', 'text-secondary');
+        chip.classList.add('bg-secondary-container', 'text-on-secondary-fixed', 'shadow-sm');
+
+        const filter = chip.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Preview Toggle to scroll directly to the empty state container
+    if (toggleBtn && emptySec) {
+      toggleBtn.addEventListener('click', () => {
+        emptySec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        emptySec.classList.add('scale-[1.02]');
+        setTimeout(() => {
+          emptySec.classList.remove('scale-[1.02]');
+        }, 350);
+      });
+    }
+  })();
+</script></main></body></html>

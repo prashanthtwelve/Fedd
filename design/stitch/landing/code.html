@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Fedd - Purpose of visit</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&amp;family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Sora:wght@300;400;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b110f;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-sora {
+      font-family: 'Sora', sans-serif;
+    }
+
+    .font-mono-code {
+      font-family: 'DM Mono', monospace;
+    }
+
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    /* Ambient deep green background pattern */
+    .bg-deep-green-canvas {
+      background-color: #1F6F5C;
+      background-image: 
+        radial-gradient(circle at 50% 15%, rgba(46, 143, 120, 0.45) 0%, transparent 65%),
+        radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 100% 100%, 20px 20px;
+    }
+
+    /* Subtle security guilloche pattern for fictional passport paper */
+    .guilloche-bg {
+      background-color: #FAF8F2;
+      background-image: 
+        radial-gradient(circle at 100% 0%, rgba(31, 111, 92, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 0% 100%, rgba(31, 111, 92, 0.06) 0%, transparent 45%),
+        repeating-linear-gradient(45deg, rgba(31, 111, 92, 0.025) 0px, rgba(31, 111, 92, 0.025) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(-45deg, rgba(31, 111, 92, 0.02) 0px, rgba(31, 111, 92, 0.02) 1px, transparent 1px, transparent 10px);
+    }
+
+    /* Passport page angle and elevation */
+    .permit-card {
+      transform: rotate(-1.5deg);
+      box-shadow: 
+        0 20px 35px -8px rgba(9, 36, 29, 0.45),
+        0 10px 18px -5px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 1px rgba(31, 111, 92, 0.15);
+      transition: transform 0.25s ease;
+    }
+
+    /* Rubber stamp styling */
+    .stamp-round {
+      transform: rotate(12deg);
+      border: 3px double #1F6F5C;
+      box-shadow: 0 0 0 1px rgba(31, 111, 92, 0.25);
+    }
+
+    .stamp-rect {
+      transform: rotate(-5deg);
+      border: 1.5px dashed rgba(31, 111, 92, 0.55);
+    }
+  </style>
+</head>
+<body class="min-h-screen w-full bg-[#1F6F5C] m-0 p-0 overflow-x-hidden flex flex-col justify-between">
+<!-- Mobile Frame Container (Portrait 390x844 format) -->
+<div class="relative w-full min-h-[844px] max-w-[390px] mx-auto bg-deep-green-canvas flex flex-col justify-between p-6 select-none overflow-hidden">
+<!-- Top Bar: Logo & Micro Pill -->
+<header class="w-full flex items-center justify-between pt-1 z-20">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-300 shadow-[0_0_8px_rgba(110,231,183,0.8)]"></span>
+<span class="text-white font-sora font-semibold text-lg tracking-tight">FedD</span>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-[#165546]/80 backdrop-blur-sm border border-emerald-400/25">
+<span class="text-[11px] font-mono-code font-medium text-emerald-100 tracking-wider uppercase">INTENTIONAL SCROLL</span>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col justify-center my-auto py-2 z-10 relative">
+<!-- Headline above the permit -->
+<div class="mb-5 text-left">
+<h1 class="text-white font-sora text-[29px] leading-[1.18] tracking-tight">
+<span class="font-light opacity-95">State your</span><br>
+<span class="font-bold tracking-tight">purpose of visit.</span>
+</h1>
+</div>
+<!-- Fictional Travel Document / Visa Entry Permit Page -->
+<div class="permit-card guilloche-bg rounded-2xl p-4 sm:p-5 relative border border-[#c4ded5] text-[#1c2e27]">
+<!-- Subtle Fictional Security Watermark / Crest (Geometric) -->
+<div class="absolute right-3 top-3 w-16 h-16 pointer-events-none opacity-[0.09] flex items-center justify-center">
+<svg class="w-full h-full" fill="none" stroke="#1F6F5C" stroke-width="2.5" viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="44" stroke-dasharray="3 3"></circle>
+<circle cx="50" cy="50" r="34"></circle>
+<polygon points="50,22 62,45 87,45 67,60 74,84 50,70 26,84 33,60 13,45 38,45"></polygon>
+</svg>
+</div>
+<!-- Document Header -->
+<div class="border-b border-[#2b7260]/20 pb-2.5 mb-3 flex items-center justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="text-[9px] font-mono-code uppercase tracking-[0.2em] text-[#1F6F5C] font-semibold">FEDD TRANSIT AUTHORITY</span>
+</div>
+<h2 class="font-sora font-extrabold text-[17px] tracking-[0.14em] text-[#122b22] uppercase mt-0.5">ENTRY PERMIT</h2>
+</div>
+<div class="text-right">
+<span class="text-[9px] font-mono-code text-[#4c6e62] tracking-wider block">DOC № 8492-FD</span>
+<span class="text-[8px] font-mono-code text-[#1F6F5C] bg-[#d7ece4] px-1.5 py-0.5 rounded font-medium">VALIDATED</span>
+</div>
+</div>
+<!-- Form Fields Grid -->
+<div class="space-y-2.5 text-left">
+<!-- Row 1: Name & Destination -->
+<div class="grid grid-cols-2 gap-2">
+<div class="border-b border-[#1F6F5C]/15 pb-1">
+<span class="block text-[9.5px] font-mono-code text-[#627a72] uppercase tracking-wider">Name</span>
+<span class="font-sora font-bold text-[14px] text-[#11231c]">You</span>
+</div>
+<div class="border-b border-[#1F6F5C]/15 pb-1">
+<span class="block text-[9.5px] font-mono-code text-[#627a72] uppercase tracking-wider">Destination</span>
+<span class="font-sora font-bold text-[14px] text-[#11231c]">Instagram</span>
+</div>
+</div>
+<!-- Row 2: Purpose of visit (Highlighted / Underlined in green) -->
+<div class="border-b border-[#1F6F5C]/20 pb-1.5 pt-0.5">
+<span class="block text-[9.5px] font-mono-code text-[#627a72] uppercase tracking-wider">Purpose of visit</span>
+<div class="inline-block mt-0.5">
+<span class="font-sora font-extrabold text-[19px] text-[#0f2820] tracking-tight border-b-[3px] border-[#1F6F5C] pb-0.5 inline-block">
+                Filmmaking
+              </span>
+</div>
+</div>
+<!-- Row 3: Goal -->
+<div class="border-b border-[#1F6F5C]/15 pb-1">
+<span class="block text-[9.5px] font-mono-code text-[#627a72] uppercase tracking-wider">Goal</span>
+<span class="font-sora font-bold text-[13px] text-[#11231c] leading-snug block">
+              Find 3 color grading references
+            </span>
+</div>
+<!-- Row 4: Length of stay & Entries -->
+<div class="grid grid-cols-2 gap-2 pb-1">
+<div class="border-b border-[#1F6F5C]/15 pb-1">
+<span class="block text-[9.5px] font-mono-code text-[#627a72] uppercase tracking-wider">Length of stay</span>
+<span class="font-sora font-bold text-[14px] text-[#1F6F5C]">10 minutes</span>
+</div>
+<div class="border-b border-[#1F6F5C]/15 pb-1">
+<span class="block text-[9.5px] font-mono-code text-[#627a72] uppercase tracking-wider">Entries</span>
+<span class="font-sora font-bold text-[14px] text-[#11231c]">1</span>
+</div>
+</div>
+</div>
+<!-- Stamp 1: Large Round Rubber-Stamp in Deep Green Ink rotated ~12 deg overlapping page edge -->
+<div class="absolute -top-4 -right-4 w-[100px] h-[100px] rounded-full stamp-round bg-[#faf8f2]/90 backdrop-blur-[2px] p-1 pointer-events-none flex items-center justify-center text-[#1F6F5C] z-30 shadow-md">
+<div class="w-full h-full rounded-full border border-dashed border-[#1F6F5C] flex flex-col items-center justify-center p-1 text-center relative">
+<!-- Curved outer text simulation -->
+<span class="text-[7.5px] font-mono-code font-bold tracking-[0.16em] uppercase text-[#1F6F5C]">★ ENTRY ★</span>
+<div class="my-0.5 border-t border-b border-[#1F6F5C] w-full py-0.5">
+<span class="font-sora font-extrabold text-[15px] leading-none block text-[#1F6F5C]">10 MIN</span>
+</div>
+<span class="text-[7px] font-mono-code font-extrabold tracking-[0.14em] uppercase text-[#1F6F5C]">APPROVED</span>
+<!-- Faint stamp distress dots -->
+<div class="absolute inset-0 bg-[radial-gradient(#1F6F5C_0.6px,transparent_0.6px)] [background-size:6px_6px] opacity-20 rounded-full"></div>
+</div>
+</div>
+<!-- Stamp 2: Second smaller, fainter rectangular stamp lower down -->
+<div class="absolute bottom-10 right-4 px-2.5 py-1 rounded stamp-rect bg-[#eef7f4]/80 pointer-events-none text-center z-20">
+<span class="text-[9.5px] font-mono-code font-extrabold tracking-widest text-[#246b5a]/80 block">
+            EXIT: CHECKED IN
+          </span>
+<span class="text-[7.5px] font-mono-code text-[#356e60]/70 block -mt-0.5">
+            TERMINAL • 01
+          </span>
+</div>
+<!-- Bottom Machine-Readable Travel Chevrons (MRZ lines) -->
+<div class="mt-3.5 pt-2 border-t border-dashed border-[#1F6F5C]/25 text-left font-mono-code text-[9.5px] tracking-[0.18em] text-[#33554a]/75 leading-tight select-all">
+<div class="truncate">P&lt;FEDDYOU&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div>
+<div class="truncate">FD8492048M2603308INSTA&lt;10MIN&lt;&lt;&lt;&lt;&lt;&lt;01</div>
+</div>
+</div>
+</main>
+<!-- Bottom Action Button: High contrast off-white pill for punch against deep green -->
+<footer class="w-full pb-2 z-20">
+<button class="w-full py-4 px-6 rounded-full bg-[#FAF8F2] text-[#123128] font-sora font-bold text-[15px] shadow-[0_12px_24px_-6px_rgba(10,35,28,0.5)] active:scale-[0.98] hover:bg-white transition-all flex items-center justify-center gap-2 group">
+<span class="">Get my stamp -&gt;</span>
+</button>
+</footer>
+</div>
+
+
+
+
+</body></html>

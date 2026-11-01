@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Sora:wght@100..800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#d4e6e0", "error": "#ba1a1a", "surface-container-high": "#e6e9e7", "surface-variant": "#e0e3e1", "on-error-container": "#93000a", "outline": "#6f7975", "on-surface": "#181c1b", "secondary": "#51625d", "on-tertiary-fixed-variant": "#304c45", "surface-container-low": "#f1f4f2", "primary": "#005645", "surface": "#f7faf8", "tertiary-fixed": "#cae9e0", "inverse-on-surface": "#eef1ef", "primary-fixed": "#a5f2d9", "on-tertiary": "#ffffff", "on-primary-fixed": "#002019", "on-tertiary-container": "#c8e7de", "tertiary": "#35514a", "on-primary": "#ffffff", "secondary-fixed": "#d4e6e0", "outline-variant": "#bec9c4", "surface-container": "#ebefed", "on-primary-container": "#a3efd7", "on-primary-fixed-variant": "#005141", "surface-bright": "#f7faf8", "on-secondary": "#ffffff", "on-error": "#ffffff", "tertiary-container": "#4d6961", "primary-container": "#1f6f5c", "on-secondary-fixed-variant": "#3a4a46", "on-secondary-fixed": "#0f1e1b", "surface-dim": "#d7dbd9", "error-container": "#ffdad6", "on-background": "#181c1b", "surface-container-highest": "#e0e3e1", "tertiary-fixed-dim": "#aecdc4", "on-tertiary-fixed": "#03201a", "background": "#f7faf8", "inverse-surface": "#2d3130", "inverse-primary": "#8ad5be", "surface-tint": "#186a57", "on-surface-variant": "#3f4945", "surface-container-lowest": "#ffffff", "on-secondary-container": "#576863", "primary-fixed-dim": "#8ad5be", "secondary-fixed-dim": "#b9cac5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "body-md": ["DM Sans"], "body-sm": ["DM Sans"], "label-sm": ["DM Sans"], "headline-md": ["Sora"], "label-lg": ["DM Sans"], "headline-sm": ["Sora"], "label-md": ["DM Sans"], "headline-lg": ["Sora"], "body-lg": ["DM Sans"], "headline-xl": ["Sora"] }, "fontSize": { "body-md": ["15px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "body-sm": ["13px", {"lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500"}], "headline-md": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "label-lg": ["15px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500"}], "headline-lg": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.025em", "fontWeight": "700"}], "body-lg": ["17px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "headline-xl": ["32px", {"lineHeight": "38px", "letterSpacing": "-0.03em", "fontWeight": "700"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-2"><span class="font-headline-sm text-[20px] font-bold tracking-tight text-primary">Fedd</span></div><button aria-label="Profile" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">person</span></button></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Page Header Title Area (Header is provided by App Shell) -->
+<div class="px-margin pt-4 pb- space-y-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Settings</h1>
+<p class="font-body-md text-body-md text-secondary">Customize your intentional rhythm</p>
+</div>
+<!-- Main Settings Container -->
+<div class="flex flex-col gap-6 px-margin mt-4">
+<!-- Group 1: Preferences -->
+<div class="flex flex-col gap-2">
+<div class="px-1 flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider font-semibold">Preferences</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Rhythm active
+        </span>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] shadow-sm flex flex-col overflow-hidden">
+<!-- Row: Your interests -->
+<button class="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors duration-150 group" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[19px]">interests</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Your interests</span>
+<span class="font-body-sm text-body-sm text-secondary">Mindful craft, Architecture, Tea</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 shrink-0 ml-3">
+<span class="font-label-md text-label-md text-primary font-medium">3 selected</span>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+</button>
+<!-- Subtle tonal divider -->
+<div class="h-[1px] bg-surface-container-high mx-5"></div>
+<!-- Row: Default session length -->
+<button class="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors duration-150 group" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[19px]">timelapse</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">Default session length</span>
+<span class="font-body-sm text-body-sm text-secondary">Calm window duration</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-3">
+<span class="font-label-md text-label-md text-secondary">10 min</span>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+</button>
+<!-- Subtle tonal divider -->
+
+<!-- Row: Nudge style with segmented control -->
+
+<div class="h-[1px] bg-surface-container-high mx-5"></div><div class="px-5 py-4 flex flex-col gap-3"><div class="flex items-center justify-between gap-3"><div class="flex items-center gap-3.5 min-w-0"><div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0"><span class="material-symbols-outlined text-[19px]">vibration</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface">Nudge style</span><span class="font-body-sm text-body-sm text-secondary">Calm reminder intensity</span></div></div></div><div class="grid grid-cols-3 p-1 rounded-full bg-surface-container gap-1" role="radiogroup" aria-label="Nudge style"><button type="button" class="nudge-btn py-1.5 rounded-full text-center font-label-md text-label-md transition-all duration-150 bg-secondary-container text-primary font-semibold" data-mode="gentle" aria-checked="true" role="radio">Gentle</button><button type="button" class="nudge-btn py-1.5 rounded-full text-center font-label-md text-label-md transition-all duration-150 text-secondary hover:text-on-surface" data-mode="firm" aria-checked="false" role="radio">Firm</button><button type="button" class="nudge-btn py-1.5 rounded-full text-center font-label-md text-label-md transition-all duration-150 text-secondary hover:text-on-surface" data-mode="silent" aria-checked="false" role="radio">Silent</button></div><p id="nudge-caption" class="font-body-sm text-body-sm text-secondary flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-primary shrink-0">info</span><span class="">Gentle pulses a soft notification when time ends.</span></p></div></div>
+</div>
+<!-- Group 2: Integration & Automations -->
+<div class="flex flex-col gap-2">
+<div class="px-1 flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider font-semibold">Integrations &amp; Flow</span>
+<span class="font-label-sm text-label-sm text-secondary">Passive Guard</span>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] shadow-sm flex flex-col overflow-hidden">
+<!-- Card Row: Open Instagram via FedD -->
+<div class="px-5 py-4 flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-start gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[19px]">open_in_new</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">Open Instagram via FedD</span>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">Guides you through Apple Shortcuts or Android routines.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-1">
+<button class="h-9 px-4 rounded-full bg-surface-container hover:bg-secondary-container text-primary font-label-md text-label-md flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span class="">Set up shortcut</span>
+</button>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high mx-5"></div>
+<!-- Row: Interest landing links with Switch -->
+<div class="px-5 py-4 flex items-center justify-between gap-3">
+<div class="flex items-start gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[19px]">explore</span>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">Interest landing links</span>
+<span class="font-body-sm text-body-sm text-secondary">Opens Instagram search directly on your selected interest.</span>
+</div>
+</div>
+<!-- iOS-style Switch (Active/ON) -->
+<button aria-checked="true" class="toggle-btn relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-state="on" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-on-primary shadow-sm ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+
+<!-- Row: Saved ideas board -->
+<button class="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors duration-150 group" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[19px]">bookmarks</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">Saved ideas board</span>
+<span class="font-body-sm text-body-sm text-secondary">Mindful takeaways during pauses</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 ml-3">
+<span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center justify-center">
+              4 saved notes
+            </span>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Group 3: Mindfulness & Data -->
+<div class="flex flex-col gap-2">
+<div class="px-1 flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider font-semibold">Mindfulness &amp; Data</span>
+<span class="font-label-sm text-label-sm text-secondary">Private &amp; Offline</span>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] shadow-sm flex flex-col overflow-hidden">
+<!-- Row: Daily pause reminders with Switch -->
+<div class="px-5 py-4 flex items-center justify-between gap-3">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[19px]">notifications_active</span>
+</div>
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">Daily pause reminders</span>
+<span class="font-body-sm text-body-sm text-secondary">Soft reminder before evening wind-down</span>
+</div>
+</div>
+<!-- iOS-style Switch (Active/ON) -->
+<button aria-checked="true" class="toggle-btn relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full bg-primary-container p-0.5 transition-colors duration-200 ease-in-out focus:outline-none" data-state="on" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-6 w-6 transform rounded-full bg-on-primary shadow-sm ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<div class="h-[1px] bg-surface-container-high mx-5"></div>
+<!-- Row: Export reflection data -->
+<button class="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors duration-150 group" type="button">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/60 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[19px]">file_download</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">Export reflection data</span>
+<span class="font-body-sm text-body-sm text-secondary">Download JSON or readable Markdown</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-3">
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Warm philosophy reminder box -->
+
+<!-- Quiet Footer Details -->
+<div class="text-center pt-2 pb-6 flex flex-col items-center gap-1">
+<p class="font-body-sm text-body-sm text-secondary">
+        FedD v1.2 · Designed for conscious pauses
+      </p>
+<p class="font-label-sm text-label-sm text-outline">
+        Zero streaks or guilt · Your data stays on device
+      </p>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction for toggle switches
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const isChecked = button.getAttribute('aria-checked') === 'true';
+      const thumb = button.querySelector('span');
+      if (isChecked) {
+        button.setAttribute('aria-checked', 'false');
+        button.classList.remove('bg-primary-container');
+        button.classList.add('bg-surface-variant');
+        thumb.classList.remove('translate-x-5');
+        thumb.classList.add('translate-x-0');
+      } else {
+        button.setAttribute('aria-checked', 'true');
+        button.classList.remove('bg-surface-variant');
+        button.classList.add('bg-primary-container');
+        thumb.classList.remove('translate-x-0');
+        thumb.classList.add('translate-x-5');
+      }
+    });
+  });
+
+  // Micro-interaction for Nudge segmented buttons
+  const nudgeCaptions = {
+    gentle: "Gentle pulses a soft notification when time ends.",
+    firm: "Firm dims the screen quietly with a mindful breather prompt.",
+    silent: "Silent records time in Insights without interjecting."
+  };
+
+  const nudgeBtns = document.querySelectorAll('.nudge-btn');
+  const captionEl = document.getElementById('nudge-caption');
+
+  nudgeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      nudgeBtns.forEach(b => {
+        b.setAttribute('aria-checked', 'false');
+        b.classList.remove('bg-secondary-container', 'text-primary', 'font-semibold', 'shadow-xs');
+        b.classList.add('text-secondary');
+      });
+
+      btn.setAttribute('aria-checked', 'true');
+      btn.classList.add('bg-secondary-container', 'text-primary', 'font-semibold', 'shadow-xs');
+      btn.classList.remove('text-secondary');
+
+      const mode = btn.dataset.mode;
+      if (captionEl && nudgeCaptions[mode]) {
+        captionEl.innerHTML = `
+          <span class="material-symbols-outlined text-[15px] text-primary shrink-0">info</span>
+          <span>${nudgeCaptions[mode]}</span>
+        `;
+      }
+    });
+  });
+</script></main>
+<nav aria-label="Bottom Navigation" class="fixed bottom-5 left-5 right-5 z-50 h-16 rounded-full flex items-center justify-around px-2 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.06)]" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(217, 225, 221);"><a aria-label="Home" class="flex items-center justify-center w-12 h-12 transition-colors" href="#"><span class="material-symbols-outlined text-[24px]" style="color: #5B6B64;">home</span></a><a aria-label="Activities" class="flex items-center justify-center w-12 h-12 transition-colors" href="#"><span class="material-symbols-outlined text-[24px]" style="color: #5B6B64;">extension</span></a><a aria-label="Insights" class="flex items-center justify-center w-12 h-12 transition-colors" href="#"><span class="material-symbols-outlined text-[24px]" style="color: #5B6B64;">bar_chart</span></a><a aria-label="Settings" class="flex flex-col items-center justify-center px-4 py-1.5 rounded-full transition-all" href="#" style="background-color: #DCEEE8;"><span class="material-symbols-outlined text-[20px]" style="color: #1F6F5C; font-variation-settings: 'FILL' 1;">settings</span><span class="font-medium text-[11px] leading-tight mt-0.5" style="color: #1F6F5C;">Settings</span></a></nav>
+
+</body></html>
